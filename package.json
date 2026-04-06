@@ -1,0 +1,56 @@
+{
+  "name": "chinese-astrology-skill",
+  "version": "1.0.0",
+  "description": "The most comprehensive Chinese astrology AI skill — BaZi (Four Pillars of Destiny) chart calculation, bone weight fortune telling, and Chinese almanac. Built by ba-zi.ai.",
+  "type": "module",
+  "module": "./src/smithery.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "bin": {
+    "chinese-astrology-skill": "./dist/stdio.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run build && chmod +x dist/stdio.js",
+    "start": "npm run build && node dist/httpServer.js",
+    "dev": "npx @smithery/cli dev"
+  },
+  "keywords": [
+    "bazi",
+    "chinese-astrology",
+    "four-pillars",
+    "bone-weight",
+    "fortune",
+    "destiny",
+    "八字",
+    "算命",
+    "命理",
+    "称骨",
+    "秤骨",
+    "mcp",
+    "skill",
+    "ai"
+  ],
+  "author": "Ba-Zi.ai <support@ba-zi.ai> (https://ba-zi.ai)",
+  "homepage": "https://ba-zi.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ba-zi-ai/chinese-astrology-skill.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "cantian-tymext": "^0.0.25",
+    "date-fns-tz": "^3.2.0",
+    "express": "^5.1.0",
+    "tyme4ts": "^1.4.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.1",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}
