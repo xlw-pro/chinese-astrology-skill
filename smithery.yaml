@@ -1,4 +1,0 @@
-startCommand:
-  type: stdio
-  configSchema: {}
-  commandFunction: ./src/smithery.ts

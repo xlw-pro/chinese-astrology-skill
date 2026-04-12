@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The most comprehensive Chinese astrology AI skill — BaZi (Four Pillars of Destiny) chart calculation, bone weight fortune telling, and Chinese almanac. Built by ba-zi.ai.",
   "type": "module",
-  "module": "./src/smithery.ts",
+  "main": "./dist/index.js",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -14,7 +14,7 @@
     "build": "rm -rf dist && tsc",
     "prepublishOnly": "npm run build && chmod +x dist/stdio.js",
     "start": "npm run build && node dist/httpServer.js",
-    "dev": "npx @smithery/cli dev"
+    "dev": "node dist/stdio.js"
   },
   "keywords": [
     "bazi",

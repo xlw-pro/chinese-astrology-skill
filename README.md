@@ -1,6 +1,6 @@
 # Chinese Astrology Skill 🔮
 
-The most comprehensive Chinese astrology AI skill — **4 tools** covering BaZi (Four Pillars of Destiny), bone weight fortune telling, and Chinese almanac.
+The most comprehensive Chinese astrology AI skill — **4 tools** covering BaZi (Four Pillars of Destiny), bone weight fortune telling, and Chinese almanac. Available as an Agent Skill (SKILL.md) and MCP server.
 
 Built by [**Ba-Zi.ai**](https://ba-zi.ai) — Free AI-powered BaZi calculator and Chinese astrology platform.
 
